@@ -276,8 +276,8 @@ TABLET:800PX
     max-width: 100%;
     height: auto;
     object-fit: cover;
-  }
-  .consultoria {
+}
+.consultoria {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,7 +285,7 @@ TABLET:800PX
     max-width: 100%;
     height: auto;
     object-fit: cover;
-  }
+}
 }
 
 /*# sourceMappingURL=style.css.map */
