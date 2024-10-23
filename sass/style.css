@@ -23,14 +23,11 @@ body {
 /*IMAGENES*/
 .logo {
   width: 100%;
-  height: 200px;
+  height: 300px;
+  padding: 0%;
   display: flex;
   justify-content: center;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-  object-fit: cover;
 }
-
 
 .imgprincipal {
   margin: auto;
@@ -87,48 +84,7 @@ p {
   text-align: center;
 }
 
-/*NOSOTROS*/
-h1{
-  font-size: 50px;
-}
-
-h2{
-  font-size: 40px;
-  line-height: 2;
-}
-
-p1{
-  font-size: 20px;
-  line-height: 2;
-}
-
-.agencia{
-  padding: 5px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-  object-fit: cover;
-}
-
-h3{
-  font-size: 50px;
-  line-height: 2;
-}
-
-.valores-texto{
-  font-size: 30px;
-  line-height: 1.5;
-  padding: 10px;
-}
-
-h4{
-  font-size: 50px;
-  line-height: 2;
-  margin: auto;
-}
-
-
-
-
+/*MAPA*/
 .mapa {
   margin: auto;
   height: auto;
@@ -141,27 +97,12 @@ h4{
 .testimonios {
   font-size: 30px;
 }
-p{
-  font-size: 20px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-.testimonios h1 h2 h3 h4{
-  margin-top: 20px;
-  margin-bottom: 10px;
-  line-height: 1.2;
-}
 
 /*SERVICIOS*/
-
-
-
-
-/*imagenes*/
 .digital {
   margin: auto;
   height: auto;
-  padding: 40px;;
+  padding: 0%;
   display: flex;
   justify-content: center;
 }
@@ -169,7 +110,7 @@ p{
 .contenidos {
   margin: auto;
   height: auto;
-  padding: 40px;
+  padding: 0%;
   display: flex;
   justify-content: center;
 }
@@ -177,7 +118,7 @@ p{
 .consultoria {
   margin: auto;
   height: auto;
-  padding: 40px;
+  padding: 0%;
   display: flex;
   justify-content: center;
 }
@@ -214,7 +155,9 @@ TABLET:800PX
   }
   .logo img {
     width: 100%;
-    height:300px;
+    height: 60%;
+    -o-object-fit: none;
+       object-fit: none;
   }
   #main {
     margin: 5vh;
@@ -227,31 +170,10 @@ TABLET:800PX
     width: 100%;
     max-width: 100%;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-
-
   /*Nosotros*/
-  h2{
-    font-size: 40px;
-    line-height: 2;
-  }
-  h3{
-    font-size: 40px;
-    line-height: 2;
-  }
-  .valores-texto{
-    font-size: 25px;
-    line-height: 1.5;
-    padding: 10px;
-  }
-  h4{
-    font-size: 40px;
-    line-height: 2
-  }
-  .footer h3{
-    font-size: 20px;
-  }
   .agencia {
     display: flex;
     justify-content: center;
@@ -268,8 +190,6 @@ TABLET:800PX
     width: 100%;
     height: 450px;
   }
-
-
   /*Clientes*/
   .testimonios {
     margin: 5vh;
@@ -294,8 +214,9 @@ TABLET:800PX
   }
   .logo img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .imgprincipal {
     display: flex;
@@ -303,7 +224,8 @@ TABLET:800PX
     align-items: center;
     width: 100%;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   /*Texto*/
   body {
@@ -312,7 +234,6 @@ TABLET:800PX
   h1, h2 {
     font-size: 24px;
     margin: 10px;
-    line-height: 2;
   }
   p {
     font-size: 16px;
@@ -321,34 +242,6 @@ TABLET:800PX
     font-size: 14px;
   }
   /*Nosotros*/
-
-  p{
-    font-size: 50px;
-  }
-
-  p1{
-    font-size: 20px;
-    line-height: 1.5;
-  }
-  
-  h3{
-    font-size: 30px;
-    margin: 4px;
-  }
-
-
-  .valores-texto{
-    font-size: 20px;
-    line-height:1.5;
-    padding: 5px;
-    margin-bottom: 15px;
-  }
-
-  h4{
-    font-size: 30px;
-    margin: 4px;
-  }
-
   .agencia {
     display: flex;
     justify-content: center;
@@ -366,28 +259,9 @@ TABLET:800PX
     height: 450px;
   }
   /*Clientes*/
-  p{
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 15px;
-  }
-
   .testimonios {
     font-size: 1rem;
-    line-height: 2;
   }
-
-  .testimonios h1 h2 h3 h4{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    line-height: 1.2;
-  }
-  .footer h3{
-    font-size: 14px;
-  }
-
-  }
-
   /*Servicios*/
   .digital {
     display: flex;
@@ -396,7 +270,8 @@ TABLET:800PX
     width: 100%;
     max-width: 100%;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .contenidos {
     display: flex;
@@ -405,21 +280,17 @@ TABLET:800PX
     width: 100%;
     max-width: 100%;
     height: auto;
-    object-fit: cover;
-}
-.consultoria {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .consultoria {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 100%;
     height: auto;
-    object-fit: cover;
-}
-.footer{
-    font-size: 18px;
-}
-
-}
-
-/*# sourceMappingURL=style.css.map */
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=style.css.map */
