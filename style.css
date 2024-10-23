@@ -1,6 +1,6 @@
 /*LLAMADO AL HTML*/
 /*ESTILOS RESET CSS*/
-*{
+* {
     margin: 0%;
     padding: 0%;
     list-style: none;
@@ -8,37 +8,41 @@
     box-sizing: border-box;
 }
 
-    /* Body */
-
-    body {
-        background-color: #defffc;
-    }
+  /* Body */
+body {
+    background-color: #defffc;
+}
 
 /*ESTILOS HEADER/NAV*/
-
-#header{
-        border-bottom: 1px solid black;
-        text-align: center;
-        padding: 10px 20px;
+#header {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 10px 20px;
 }
 
 /*IMAGENES*/
-
-.logo {
+.logo{
     width: 100%;
-    height: 300px;
-    padding: 0%;
-    display: flex; 
+    height: 200px;
+    display: flex;
     justify-content: center;
+    border-radius: 10px;
+    box-shadow:0px 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
 }
-.imgprincipal{
+.logo img{
+    object-fit: cover;
+}
+
+.imgprincipal {
     margin: auto;
     height: auto;
     padding: 0%;
     display: flex;
     justify-content: center;
 }
-.agencia{
+
+.agencia {
     margin: auto;
     height: auto;
     padding: 0%;
@@ -47,15 +51,14 @@
 }
 
 /*NAVEGACION*/
-
-nav ul li{
+    nav ul li {
     list-style: none;
     text-align: center;
     display: inline-block;
     margin: 0 10px;
 }
 
-a{
+a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -63,24 +66,22 @@ a{
 }
 
 /*MAIN*/
-
 main {
     margin: 20px;
     padding: 20px;
 }
 
-h1{
+h1 {
     text-align: center;
     text-decoration: underline;
     margin: 20px;
 }
 
-p{
+p {
     font-size: 20px;
 }
 
 /*ESTILOS FOOTER*/
-
 .footer {
     margin: 20px;
     padding: 20px;
@@ -89,8 +90,7 @@ p{
 }
 
 /*MAPA*/
-
-.mapa{
+.mapa {
     margin: auto;
     height: auto;
     padding: 0%;
@@ -99,28 +99,28 @@ p{
 }
 
 /*Clientes*/
-
-.testimonios{
+.testimonios {
     font-size: 30px;
 }
 
 /*SERVICIOS*/
+.digital {
+    margin: auto;
+    height: auto;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+}
 
-.digital{
+.contenidos {
     margin: auto;
     height: auto;
     padding: 0%;
     display: flex;
     justify-content: center;
 }
-.contenidos{
-    margin: auto;
-    height: auto;
-    padding: 0%;
-    display: flex;
-    justify-content: center;
-}
-.consultoria{
+
+.consultoria {
     margin: auto;
     height: auto;
     padding: 0%;
@@ -130,29 +130,15 @@ p{
 
 /*TEXTO NOSOTROS*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Contacto Form*/
-.formulario{
+
+.formulario {
     margin: auto;
     height: auto;
     padding: 0%;
     display: flex;
     justify-content: center;
 }
-
-
 
 /*BREAKPOINTS MEDIA QUERIES
 
@@ -161,35 +147,28 @@ TABLET:800PX
 
 
 
-*/
+  */
 
-@media (min-width:601px) and (max-width:1024px) {
-    
-    #header{
+@media (min-width: 601px) and (max-width: 1024px) {
+    #header {
         height: auto;
         flex-direction: column;
         text-align: center;
     }
-
-    .logo{
+    .logo {
+        width: 100%;
+        height: 200px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 60%;
+        border-radius: 10px;
+        box-shadow:0px 4px 8px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
     }
-
-    .logo img {
-        width: 100%;
-        height: 60%;
-        object-fit: none;
-    }
-    
-    #main{
+    #main {
         margin: 5vh;
         font-size: 2rem;
     }
-
-    .imgprincipal{
+    .imgprincipal {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -198,64 +177,58 @@ TABLET:800PX
         height: auto;
         object-fit: cover;
     }
-
     /*Nosotros*/
-.agencia{
-    display: flex;
-    justify-content: center;
-}
 
-
-.agencia img{
-    max-width: 100%;
-    height: auto;
-}
-
-.mapa{
-    display: flex;
-    justify-content: center;
-}
-
-.mapa iframe{
-    width: 100%;
-    height: 450px;
-}
+    .agencia {
+        display: flex;
+        justify-content: center;
+    }
+    .agencia img {
+        max-width: 100%;
+        height: auto;
+    }
+    .mapa {
+        display: flex;
+        justify-content: center;
+    }
+    .mapa iframe {
+        width: 100%;
+        height: 450px;
+    }
+    
     /*Clientes*/
-    .testimonios{
+    .testimonios {
         margin: 5vh;
         font-size: 2rem;
     }
-
-
 }
-
 /*Moviles*/
 
-@media (max-width:600px){
+@media (max-width: 600px) {
     nav ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    nav ul li{
+    nav ul li {
         margin: 10px 0;
     }
+    .logo {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow:0px 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
 
-    .logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto;
     }
-
     .logo img {
         width: 100%;
         height: auto;
         object-fit: contain;
     }
-
-    .imgprincipal{
+    .imgprincipal {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -264,51 +237,42 @@ TABLET:800PX
         object-fit: cover;
     }
     /*Texto*/
-    body{
-        font-size: 18px;
+    body {
+    font-size: 18px;
     }
-
-    h1,h2 {
+    h1, h2 {
         font-size: 24px;
         margin: 10px;
     }
-
     p {
         font-size: 16px;
     }
-
     .footer h3 {
         font-size: 14px;
     }
-
-/*Nosotros*/
-.agencia{
-    display: flex;
-    justify-content: center;
-}
-
-
-.agencia img{
-    max-width: 100%;
-    height: auto;
-}
-
-.mapa{
-    display: flex;
-    justify-content: center;
-}
-
-.mapa iframe{
-    width: 100%;
-    height: 450px;
-}
+    /*Nosotros*/
+    .agencia {
+        display: flex;
+        justify-content: center;
+    }
+    .agencia img {
+        max-width: 100%;
+        height: auto;
+    }
+    .mapa {
+        display: flex;
+        justify-content: center;
+    }
+    .mapa iframe {
+        width: 100%;
+        height: 450px;
+    }
     /*Clientes*/
-    .testimonios{
+    .testimonios {
         font-size: 1rem;
     }
-
     /*Servicios*/
-    .digital{
+    .digital {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -317,7 +281,7 @@ TABLET:800PX
         height: auto;
         object-fit: cover;
     }
-    .contenidos{
+    .contenidos {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -326,7 +290,7 @@ TABLET:800PX
         height: auto;
         object-fit: cover;
     }
-    .consultoria{
+    .consultoria {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -334,6 +298,9 @@ TABLET:800PX
         max-width: 100%;
         height: auto;
         object-fit: cover;
+    }
+
+    .footer{
+        font-size: 18px;
     }
 }
-
