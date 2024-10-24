@@ -89,11 +89,11 @@ p {
 
 /*NOSOTROS*/
 h1{
-  font-size: 50px;
+  font-size: 80px;
 }
 
 h2{
-  font-size: 40px;
+  font-size: 50px;
   line-height: 2;
 }
 
@@ -126,9 +126,6 @@ h4{
   margin: auto;
 }
 
-
-
-
 .mapa {
   margin: auto;
   height: auto;
@@ -150,6 +147,9 @@ p{
   margin-top: 20px;
   margin-bottom: 10px;
   line-height: 1.2;
+}
+footer h3{
+  font-size: 30px;
 }
 
 /*SERVICIOS*/
@@ -271,11 +271,30 @@ TABLET:800PX
 
 
   /*Clientes*/
+
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 30px
+  }
+  h4{
+    font-size: 30px
+  }
+  
+
   .testimonios {
     margin: 5vh;
     font-size: 2rem;
   }
 }
+/*SERVICIOS*/
+
+
+
 /*Moviles*/
 @media (max-width: 600px) {
   nav ul {
@@ -420,6 +439,6 @@ TABLET:800PX
     font-size: 18px;
 }
 
-}
+
 
 /*# sourceMappingURL=style.css.map */
