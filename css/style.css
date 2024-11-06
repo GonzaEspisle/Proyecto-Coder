@@ -1,5 +1,6 @@
 /*LLAMADO AL HTML*/
 /*ESTILOS RESET CSS*/
+
 * {
   margin: 0%;
   padding: 0%;
@@ -10,27 +11,20 @@
 
 /* Body */
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #defffc;
 }
 
 /*ESTILOS HEADER/NAV*/
 #header {
-  border-bottom: 1px solid black;
   text-align: center;
   padding: 10px 20px;
 }
 
 /*IMAGENES*/
-.logo {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-  object-fit: cover;
-}
-
 
 .imgprincipal {
   margin: auto;
@@ -38,6 +32,7 @@ body {
   padding: 0%;
   display: flex;
   justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 }
 
 .agencia {
@@ -48,12 +43,70 @@ body {
   justify-content: center;
 }
 
-/*NAVEGACION*/
-nav ul li {
+/*NAVEGACION-MENU HAMBURGUESA*/
+
+.nav {
+  border-bottom: 1px solid grey;
+}
+
+.nav__toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0rem 1rem;
+  right: 0;
+}
+
+.close,
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  margin-top: 0.2rem;
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem;
+}
+
+li {
   list-style: none;
-  text-align: center;
-  display: inline-block;
-  margin: 0 10px;
+  display: none;
+}
+
+li:first-child {
+  margin-right: auto;
+  display: block;
+}
+
+.nav__menu a {
+  text-decoration: none;
+  color: initial;
+  font-size: 1.2rem;
+}
+
+#nav__checkbox:checked ~ ul.nav__menu li {
+  display: block;
+}
+#nav__checkbox:checked ~ label.nav__toggle .hamburger {
+  display: none;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block;
+}
+
+
+.logo-chiquito{
+  height: 150px;
+  width: 100%;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
 }
 
 a {
@@ -63,7 +116,7 @@ a {
   color: black;
 }
 
-/*MAIN*/
+/*INICIO */
 main {
   margin: 20px;
   padding: 20px;
@@ -88,18 +141,18 @@ p {
 }
 
 /*NOSOTROS*/
-h1{
+.main-nosotros h1{
   font-size: 80px;
 }
 
-h2{
-  font-size: 50px;
+.titulos-nosotros h2{
+  font-size: 30px;
   line-height: 2;
 }
 
-p1{
+.titulos-nosotros p{
   font-size: 20px;
-  line-height: 2;
+  line-height: 2.0; 
 }
 
 .agencia{
@@ -109,19 +162,27 @@ p1{
   object-fit: cover;
 }
 
-h3{
-  font-size: 50px;
+.titulo-valores h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
   line-height: 2;
+  color: 	#EABE3F;
 }
 
-.valores-texto{
-  font-size: 30px;
+.valores-texto p{
+  margin-bottom: 20px;
+  font-size: 25px;
   line-height: 1.5;
   padding: 10px;
 }
 
-h4{
-  font-size: 50px;
+.nuestra-sucursal h4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
   line-height: 2;
   margin: auto;
 }
@@ -138,48 +199,103 @@ h4{
 .testimonios {
   font-size: 30px;
 }
-p{
+
+.testimonios p{
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
-.testimonios h1 h2 h3 h4{
+.testimonios h1 h2 h3 h4 {
   margin-top: 20px;
   margin-bottom: 10px;
   line-height: 1.2;
 }
+
 footer h3{
   font-size: 30px;
 }
 
 /*SERVICIOS*/
 
+.titulos-servicios h1{
+  font-size: 40px;
+}
 
+.titulos-servicios h2{
+  font-size: 35px;
+  color:red;
+  margin: 20px;
+  padding: 20px;
+}
+
+.titulos-servicios h3{
+  font-size: 30px;
+  margin:15px;
+}
+
+.titulos-servicios h4{
+  font-size: 30px;
+  margin: 15px;
+}
+
+.titulos-servicios h5{
+  font-size: 30px;
+  margin: 15px;
+}
+
+.titulos-servicios h6{
+  font-size: 30px;
+  margin: 15px;
+}
+
+.texto-servicios p{
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 20px;
+}
 
 
 /*imagenes*/
+
 .digital {
   margin: auto;
-  height: auto;
-  padding: 40px;;
+  height: 500px;
+  width:auto;
+  padding: 40px;
   display: flex;
   justify-content: center;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+
 }
 
 .contenidos {
   margin: auto;
-  height: auto;
+  height: 500px;
+  width:auto;
   padding: 40px;
   display: flex;
   justify-content: center;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
 .consultoria {
   margin: auto;
-  height: auto;
+  height: 500px;
+  width:auto;
   padding: 40px;
   display: flex;
   justify-content: center;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+.paginas-web{
+  margin: auto;
+  height: 500px;
+  width:auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
 /*TEXTO NOSOTROS*/
@@ -191,6 +307,30 @@ footer h3{
   display: flex;
   justify-content: center;
 }
+
+/*FOOTER*/
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.footer h4{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  font-family:'Times New Roman', Times, serif ;
+  margin: 0;
+}
+
+.logo-chiquito-footer{
+  float: left;
+  height: auto;
+  width: 100px;
+  
+}
+
 
 /*BREAKPOINTS MEDIA QUERIES
 
@@ -297,25 +437,15 @@ TABLET:800PX
 
 /*Moviles*/
 @media (max-width: 600px) {
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  nav ul li {
-    margin: 10px 0;
-  }
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-  }
-  .logo img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-  }
+
+  .logo-chiquito{
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+
   .imgprincipal {
     display: flex;
     justify-content: center;
@@ -324,6 +454,7 @@ TABLET:800PX
     height: auto;
     object-fit: cover;
   }
+
   /*Texto*/
   body {
     font-size: 18px;
@@ -341,29 +472,29 @@ TABLET:800PX
   }
   /*Nosotros*/
 
-  p{
+.titulos-nosotros{
     font-size: 50px;
   }
 
-  p1{
+.titulos-nosotros p{
     font-size: 20px;
     line-height: 1.5;
   }
   
-  h3{
+  .titulo-valores h3{
     font-size: 30px;
     margin: 4px;
   }
 
 
-  .valores-texto{
+  .valores-texto p {
     font-size: 20px;
     line-height:1.5;
     padding: 5px;
     margin-bottom: 15px;
   }
 
-  h4{
+.nuestra-sucursal h4 {
     font-size: 30px;
     margin: 4px;
   }
@@ -384,6 +515,7 @@ TABLET:800PX
     width: 100%;
     height: 450px;
   }
+
   /*Clientes*/
   p{
     font-size: 16px;
@@ -405,40 +537,111 @@ TABLET:800PX
     font-size: 14px;
   }
 
-  }
+  
 
-  /*Servicios*/
-  .digital {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .contenidos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+
+/*SERVICIOS*/
+
+.titulos-servicios h1{
+  font-size: 35px;
 }
+
+
+.titulos-servicios h3{
+  font-size: 25px;
+  margin:15px;
+}
+
+.titulos-servicios h4{
+  font-size: 25px;
+  margin: 15px;
+}
+
+.titulos-servicios h5{
+  font-size: 25px;
+  margin: 15px;
+}
+
+.titulos-servicios h6{
+  font-size: 25px;
+  margin: 15px;
+}
+
+.texto-servicios p{
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+
+/*imagenes*/
+
+.digital {
+  margin: auto;
+  height: 250px;
+  width:auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+
+}
+
+.contenidos {
+  margin: auto;
+  height: 250px;
+  width:auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
 .consultoria {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+  margin: auto;
+  height: 250px;
+  width:auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
+
+.paginas-web{
+  margin: auto;
+  height: 250px;
+  width: auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+
+/*FOOTER*/
+
 .footer{
-    font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
+.footer h4{
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  font-family:'Times New Roman', Times, serif ;
+  margin: 0;
+}
 
+.logo-chiquito-footer{
+  float: left;
+  height: auto;
+  width: 100px;
+}
+
+}
 
 /*# sourceMappingURL=style.css.map */
