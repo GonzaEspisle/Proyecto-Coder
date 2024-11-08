@@ -1,0 +1,26 @@
+/*INICIO */
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.imgprincipal {
+    margin: auto;
+    height: auto;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
