@@ -19,3 +19,40 @@
 footer h3 {
     font-size: 30px;
 }
+
+/*imagenes*/
+
+.testimonios {
+    max-width: 100%;
+}
+
+.testimonio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.testimonio .imagen-cliente {
+    width: 25%; 
+    height: auto;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+.testimonio .texto-testimonio {
+    max-width: 60%;
+}
+
+.testimonio .texto-testimonio h2,
+.testimonio .texto-testimonio h3,
+.testimonio .texto-testimonio h4 {
+    margin-top: 0;
+}
+
+.testimonio .texto-testimonio p {
+    margin: 10px 0 0;
+}
