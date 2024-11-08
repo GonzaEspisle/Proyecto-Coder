@@ -99,6 +99,21 @@ TABLET:800PX
         margin: 5vh;
         font-size: 2rem;
     }
+
+    .testimonio {
+        flex-direction: row;
+        height: auto;
+        padding: 20px;
+    }
+
+    .imagen-cliente {
+        width: 35%;
+        
+    }
+
+    .texto-testimonio {
+        max-width: 55%;
+    }
 }
 
 /*SERVICIOS*/
@@ -133,7 +148,9 @@ h2 {
 }
 
 /*Moviles*/
+
 @media (max-width: 600px) {
+
     .logo-chiquito {
         height: 100px;
         width: 100px;
@@ -222,114 +239,125 @@ h2 {
     /*Clientes*/
 
     p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 15px;
+        font-size: 14px; 
     }
 
     .testimonios {
-        font-size: 1rem;
-        line-height: 2;
+        font-size: 0.9rem; 
+    }
 
-        h1 h2 h3 h4 {
-            margin-top: 20px;
-            margin-bottom: 10px;
-            line-height: 1.2;
-        }
+    .testimonios h1,.testimonios h2,.testimonios h3,.testimonios h4{
+        font-size: 1.2rem; 
+        margin-top: 15px;
+        margin-bottom: 5px;
     }
 
     .footer h3 {
-        font-size: 14px;
+        font-size: 12px; 
     }
 
-    /*SERVICIOS*/
-
-    .titulos-servicios {
-        h1 {
-            font-size: 35px;
-        }
-
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-size: 25px;
-            margin: 15px;
-        }
+    .testimonio {
+        padding: 10px; 
     }
 
-    .texto-servicios p {
+    .imagen-cliente {
+        width: 50%; 
+        margin-bottom: 10px;
+    }
+
+    .texto-testimonio {
+        font-size: 0.9rem; 
+    }
+
+/*SERVICIOS*/
+
+.titulos-servicios {
+    h1 {
+        font-size: 35px;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 25px;
+        margin: 15px;
+    }
+}
+
+.texto-servicios p {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/*imagenes*/
+
+.digital,
+.contenidos,
+.consultoria,
+.paginas-web {
+    margin: auto;
+    height: 250px;
+    width: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*CONTACTO FORM*/
+
+.container {
+    padding: 20px;
+}
+
+.contact-box {
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.left {
+    display: none;
+}
+
+.right {
+    padding: 20px;
+}
+
+.field,
+.btn {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/*FOOTER*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    h4 {
         font-size: 15px;
-        line-height: 1.5;
-        padding: 20px;
+        font-weight: bold;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        margin: 0;
     }
+}
 
-    /*imagenes*/
+.logo-chiquito-footer {
+    float: left;
+    height: auto;
+    width: 100px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
 
-    .digital,
-    .contenidos,
-    .consultoria,
-    .paginas-web {
-        margin: auto;
-        height: 250px;
-        width: auto;
-        padding: 40px;
-        display: flex;
-        justify-content: center;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    /*CONTACTO FORM*/
-
-    .container {
-        padding: 20px;
-    }
-
-    .contact-box {
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-
-    .left {
-        display: none;
-    }
-
-    .right {
-        padding: 20px;
-    }
-
-    .field,
-    .btn {
-        font-size: 1rem;
-        padding: 0.4rem 0.8rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    /*FOOTER*/
-
-    .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-
-        h4 {
-            font-size: 15px;
-            font-weight: bold;
-            color: black;
-            font-family: "Times New Roman", Times, serif;
-            margin: 0;
-        }
-    }
-
-    .logo-chiquito-footer {
-        float: left;
-        height: auto;
-        width: 100px;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    }
 }

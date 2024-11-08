@@ -339,24 +339,20 @@ footer h3 {
   padding: 20px;
   box-sizing: border-box;
 }
-
 .testimonio .imagen-cliente {
   width: 25%;
   height: auto;
   border-radius: 50%;
   object-fit: cover;
 }
-
 .testimonio .texto-testimonio {
   max-width: 60%;
 }
-
 .testimonio .texto-testimonio h2,
 .testimonio .texto-testimonio h3,
 .testimonio .texto-testimonio h4 {
   margin-top: 0;
 }
-
 .testimonio .texto-testimonio p {
   margin: 10px 0 0;
 }
@@ -470,6 +466,17 @@ TABLET:800PX
     margin: 5vh;
     font-size: 2rem;
   }
+  .testimonio {
+    flex-direction: row;
+    height: auto;
+    padding: 20px;
+  }
+  .imagen-cliente {
+    width: 35%;
+  }
+  .texto-testimonio {
+    max-width: 55%;
+  }
 }
 /*SERVICIOS*/
 /*Contacto*/
@@ -572,21 +579,28 @@ h2 {
   }
   /*Clientes*/
   p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 15px;
+    font-size: 14px;
   }
   .testimonios {
-    font-size: 1rem;
-    line-height: 2;
+    font-size: 0.9rem;
   }
-  .testimonios h1 h2 h3 h4 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    line-height: 1.2;
+  .testimonios h1, .testimonios h2, .testimonios h3, .testimonios h4 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
   .footer h3 {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .testimonio {
+    padding: 10px;
+  }
+  .imagen-cliente {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .texto-testimonio {
+    font-size: 0.9rem;
   }
   /*SERVICIOS*/
   .titulos-servicios h1 {

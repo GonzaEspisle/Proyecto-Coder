@@ -34,25 +34,25 @@ footer h3 {
     gap: 20px;
     padding: 20px;
     box-sizing: border-box;
-}
 
-.testimonio .imagen-cliente {
-    width: 25%; 
-    height: auto;
-    border-radius: 50%; 
-    object-fit: cover;
-}
+    .imagen-cliente {
+        width: 25%;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 
-.testimonio .texto-testimonio {
-    max-width: 60%;
-}
+    .texto-testimonio {
+        max-width: 60%;
 
-.testimonio .texto-testimonio h2,
-.testimonio .texto-testimonio h3,
-.testimonio .texto-testimonio h4 {
-    margin-top: 0;
-}
+        h2,
+        h3,
+        h4 {
+            margin-top: 0;
+        }
 
-.testimonio .texto-testimonio p {
-    margin: 10px 0 0;
+        p {
+            margin: 10px 0 0;
+        }
+    }
 }
