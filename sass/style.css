@@ -107,7 +107,8 @@ a {
   padding: 5px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .titulo-valores h3 {
@@ -344,7 +345,8 @@ footer h3 {
   width: 25%;
   height: auto;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .testimonio .texto-testimonio {
@@ -419,7 +421,8 @@ TABLET:800PX
     width: 100%;
     max-width: 100%;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   /*Nosotros*/
   h2,
@@ -523,7 +526,8 @@ h2 {
     align-items: center;
     width: 100%;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   /*Texto*/
   body {
@@ -684,6 +688,4 @@ h2 {
     width: 100px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
