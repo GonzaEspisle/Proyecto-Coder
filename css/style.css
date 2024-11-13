@@ -81,6 +81,20 @@ li:first-child {
   display: block;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.logo-chiquito:hover {
+  animation: growfade 0.5 forwards;
+}
+@keyframes growfade {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
 }
 
 a {
@@ -218,6 +232,20 @@ a {
   height: auto;
   width: 100px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s, ease, opacity 0.5 ease;
+}
+.logo-chiquito-footer:hover {
+  animation: growfade 0.5 forwards;
+}
+@keyframes growfade {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
 }
 
 /*Contacto Form*/
@@ -301,6 +329,10 @@ h2 {
   outline: none;
   border-radius: 4px;
   color: #fff;
+  transition: background-color 0.3s ease;
+}
+.btn .btn:hover {
+  background-color: #27ae60;
 }
 .btn:hover {
   background-color: forestGreen;
