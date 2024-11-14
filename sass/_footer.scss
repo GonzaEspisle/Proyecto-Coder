@@ -25,6 +25,29 @@
     }
 }
 
+.redes-sociales img{
+    width: 30px;
+    margin: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s, ease, opacity 0.5 ease;
+
+
+    &:hover {
+        @include growfade;
+    }
+}
+
+.redes-sociales a{
+    color: white;
+    text-decoration: none;
+}
+
+.redes-sociales p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
 .logo-chiquito-footer {
     float: left;
     height: auto;
